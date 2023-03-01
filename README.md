@@ -3,37 +3,43 @@
 This is a nvim repository that aims to be as easy to use as vscode.
 
 ## curl nvim setup from Bruce
-cd ~/.config
+> cd ~/.config
+```shell
 git clone https://github.com/BruceChanJianLe/nvim.git
-cd nvim
+```
+> cd nvim
+```shell
 ./isntall_neovim.bash
-
+```
 ## install packer
+```shell
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
+```
 ## generate bash_aliases for neovim
-cd ~
-touch .bash_aliases
-- #!/usr/bin/env bash
-- alias vim ='nvim'
-- alias vi = 'nvim'
-
+> cd ~
+> touch .bash_aliases
+```shell
+#!/usr/bin/env bash
+alias vim ='nvim'
+alias vi = 'nvim'
+```
 ## setup and source
-look for packer.lua 
+> look for packer.lua 
 - space pf enter lua
 - :so # to source
 - :PackerInstall # to install
 
-look for telescope.lua
+> look for telescope.lua
 - space pf enter lua
 - :so
 - :TSUpdate
 
-- comment out sumneko_lua at lsp.lua for ubuntu18
-- &&
-- download ripgrep from https://github.com/BurntSushi/ripgrep/releases
-- dpkg -i ripgrep*.deb
+> comment out sumneko_lua at lsp.lua for ubuntu18
+
+download ripgrep from https://github.com/BurntSushi/ripgrep/releases
+
+dpkg -i ripgrep*.deb
 
 quit vim and source .bashrc
 
